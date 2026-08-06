@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  background-color: #0b0f14;
+  color: #e6ebf1;
+  margin: 0;
+  padding: 0;
+  overscroll-behavior: none;
+}
+
+/* Explicit, non-inherited input styling. Prevents the "invisible text" bug
+   caused by global form resets bleeding in from a parent page. */
+input,
+textarea,
+select {
+  color: #ffffff;
+  background-color: transparent;
+  caret-color: #5eead4;
+}
+
+input::placeholder {
+  color: #5a6472;
+  opacity: 1;
+}
+
+* {
+  box-sizing: border-box;
+}
